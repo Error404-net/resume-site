@@ -1,0 +1,16 @@
+{{- $home := site.Home -}}
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+{{ partial "head.html" . }}
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{{ "css/print.css" | relURL }}">
+</head>
+<body class="sheet">
+<main id="resume">
+  {{ partial "hero.html" . }}
+  {{/* Contact section is already in the hero; drop it from the printed body. */}}
+  <div class="content">{{ $home.Content | replaceRE `(?s)<h2 id="contact".*` "" | safeHTML }}</div>
+</main>
+</body>
+</html>

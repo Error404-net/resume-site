@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" media="screen">
+<link rel="stylesheet" href="{{ "css/print.css" | relURL }}" media="print">
+<script>
+  // Set theme before first paint: saved choice, else system preference.
+  (function(){var t;try{t=localStorage.getItem('theme')}catch(e){}
+  if(['dark','nfo','light'].indexOf(t)<0)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+  document.documentElement.setAttribute('data-theme',t)})();
+</script>
+</head>
+<body>
+<a class="skip" href="#resume">Skip to resume</a>
+<div class="topbar">
+  <div class="wrap bar">
+    <span class="wordmark">ERROR404.NET</span>
+    <nav aria-label="Resume formats">
+      <a href="{{ "print/" | relURL }}">print view</a>
+      <a href="{{ site.Params.pdf | relURL }}">download pdf</a>
+      <button class="theme-toggle" id="theme-btn" type="button" aria-label="Toggle theme" title="Cycle: Neon, NFO, Light">◐ NEON</button>
+    </nav>
+  </div>
+</div>
+<main class="wrap" id="resume">
+  {{ partial "hero.html" . }}
+  <div class="content">{{ .Content }}</div>
+</main>
+<footer class="wrap foot">
+  <pre class="nfo" aria-hidden="true">!ignore → return "404: Resume not found"</pre>
+  <p>Updated {{ .Params.lastmod }}</p>
+</footer>
+<script>
+  (function(){
+    var T=['dark','nfo','light'],L={dark:'\u25d0 NEON',nfo:'\u25a3 NFO',light:'\u2600 LIGHT'};
+    var root=document.documentElement,btn=document.getElementById('theme-btn');
+    function show(){btn.textContent=L[root.getAttribute('data-theme')]||L.dark}
+    show();
+    btn.addEventListener('click',function(){
+      var n=T[(T.indexOf(root.getAttribute('data-theme'))+1)%T.length];
+      root.setAttribute('data-theme',n);show();
+      try{localStorage.setItem('theme',n)}catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>

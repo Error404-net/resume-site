@@ -1,0 +1,14 @@
+# Domain-agnostic: relative URLs so any hostname pointing at this build works.
+baseURL = "/"
+relativeURLs = true
+locale = "en-US"
+title = "Jesse Durkee"
+disableKinds = ["RSS", "sitemap", "taxonomy", "term"]
+enableRobotsTXT = true
+
+[params]
+  author = "Jesse Durkee"
+  pdf = "Jesse-Durkee-Resume.pdf"
+
+[markup.goldmark.renderer]
+  unsafe = false

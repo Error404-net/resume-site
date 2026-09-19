@@ -1,0 +1,17 @@
+{{- $p := site.Home.Params -}}
+<header class="hero">
+  <img class="mark mark-color" src="{{ "assets/logos/libra-no-ring-multicolor.svg" | relURL }}" alt="" width="64" height="64">
+  <img class="mark mark-white" src="{{ "assets/logos/libra-no-ring-white.svg" | relURL }}" alt="" width="64" height="64">
+  <img class="mark mark-black" src="{{ "assets/logos/libra-no-ring-black.svg" | relURL }}" alt="" width="40" height="40">
+  <div class="hero-text">
+    <h1>{{ site.Home.Title }}</h1>
+    <p class="tagline">{{ $p.tagline }}</p>
+    <p class="desc">{{ site.Home.Description }}</p>
+    <ul class="contact">
+      <li class="loc">{{ $p.location }}</li>
+      <li><a href="mailto:{{ $p.email }}">{{ $p.email }}</a></li>
+      <li><a href="{{ $p.linkedin }}" rel="me noopener">{{ $p.linkedin | replaceRE `^https?://(www\.)?` "" }}</a></li>
+      <li><a href="{{ $p.github }}" rel="me noopener">{{ $p.github | replaceRE `^https?://(www\.)?` "" }}</a></li>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,10 @@
+{{- $home := site.Home -}}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ $home.Title }}{{ with $home.Params.tagline }} | {{ . }}{{ end }}</title>
+<meta name="description" content="{{ $home.Description }}">
+<meta name="author" content="{{ site.Params.author }}">
+<meta property="og:title" content="{{ $home.Title }}">
+<meta property="og:description" content="{{ $home.Description }}">
+<meta property="og:type" content="profile">
+<link rel="icon" type="image/svg+xml" href="{{ "assets/logos/libra-no-ring-multicolor.svg" | relURL }}">

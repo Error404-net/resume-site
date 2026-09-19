@@ -1,0 +1,47 @@
+/* Error404 resume: Print/Corporate mode. Pure black on white, one face, no accents.
+   Identity carried by ASCII rules and the > :: ~/ markers (DESIGN.md section 5). */
+@import url(fonts.css);
+
+:root{--ink:#000000;--paper:#FFFFFF;--font-body:'JetBrains Mono',monospace}
+@page{
+  size:Letter;margin:0.55in 0.6in 0.65in;
+  @bottom-left{content:"ERROR404.NET";font:7pt var(--font-body);color:var(--ink)}
+  @bottom-right{content:"page " counter(page);font:7pt var(--font-body);color:var(--ink)}
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font:8.6pt/1.42 var(--font-body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* on-screen preview of the printed sheet */
+@media screen{
+  body.sheet{background:#E6E6E6;padding:1.5rem 0}
+  body.sheet main{width:8.5in;max-width:100%;margin:0 auto;background:var(--paper);padding:.55in .6in;box-shadow:0 0 0 1px #000}
+}
+.topbar,.skip,.foot{display:none}
+a{color:var(--ink);text-decoration:none}
+a[href^="mailto:"],.contact a{font-weight:700}
+main{display:block}
+
+.hero{display:flex;gap:.9rem;align-items:flex-start;padding-bottom:.6rem;border-bottom:2px solid var(--ink);margin-bottom:.2rem}
+.mark-color{display:none}
+.mark-black{display:block;width:.5in;height:.5in;flex:none}
+.hero h1{font:700 20pt/1.1 var(--font-body);margin:0 0 .15rem;letter-spacing:0}
+.hero h1::before{content:"> "}
+.tagline{margin:0;font-weight:700}
+.desc{margin:.2rem 0 .3rem;max-width:62ch}
+.contact{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 1.1rem}
+.contact .loc::before{content:"~/ "}
+
+.content h2{font:700 10pt/1.2 var(--font-body);text-transform:uppercase;letter-spacing:1px;margin:.9rem 0 .35rem;break-after:avoid}
+.content h2::before{content:":: "}
+.content h2::after{content:"";display:block;margin-top:.15rem;border-top:1px dashed var(--ink)}
+.content h3{font:700 9.2pt/1.3 var(--font-body);margin:.55rem 0 .05rem;break-after:avoid}
+.content p{margin:.1rem 0 .3rem}
+.content h3 + p{margin-top:0}
+.content ul{margin:.1rem 0 .3rem;padding:0;list-style:none}
+.content li{position:relative;padding-left:1.1rem;margin-bottom:.12rem;break-inside:avoid}
+.content li::before{content:">";position:absolute;left:0}
+.content h3,.content h3 + p,.content h3 + ul{break-inside:avoid}
+.content code{font:inherit}
+.content code:not(:last-child)::after{content:" ·"}
+.content strong{font-weight:700}
+.content h3 + p{break-after:avoid}
