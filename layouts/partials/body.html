@@ -1,0 +1,11 @@
+{{- /* Drop body content before the first section (hero renders name/contact),
+       then turn "**Label:** a · b · c" skill paragraphs into chip lists. */ -}}
+{{- $c := .Content | replaceRE `(?s)^.*?(<h2 )` "${1}" -}}
+{{- range findRE `<p><strong>[^<]+:</strong> [^<]+</p>` $c -}}
+  {{- $m := index (findRESubmatch `<p><strong>([^<]+):</strong> ([^<]+)</p>` .) 0 -}}
+  {{- $items := split (index $m 2 | string) " · " -}}
+  {{- $html := printf `<div class="skill"><strong>%s</strong><ul class="chips">` (index $m 1) -}}
+  {{- range $items }}{{ $html = printf "%s<li>%s</li>" $html . }}{{ end -}}
+  {{- $c = replace $c (index $m 0 | string) (printf "%s</ul></div>" $html) -}}
+{{- end -}}
+{{- $c | safeHTML -}}

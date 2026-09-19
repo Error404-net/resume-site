@@ -45,3 +45,10 @@ main{display:block}
 .content code:not(:last-child)::after{content:" ·"}
 .content strong{font-weight:700}
 .content h3 + p{break-after:avoid}
+.skill{margin:.1rem 0 .3rem;break-inside:avoid}
+.skill > strong{display:inline}
+.skill > strong::after{content:": "}
+.chips{display:inline;margin:0;padding:0;list-style:none}
+.content .chips li{display:inline;padding:0;margin:0}
+.content .chips li::before{content:none}
+.content .chips li:not(:last-child)::after{content:" ·"}

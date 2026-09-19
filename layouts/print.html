@@ -9,8 +9,7 @@
 <body class="sheet">
 <main id="resume">
   {{ partial "hero.html" . }}
-  {{/* hero renders name/contact; drop body content before the first section */}}
-  <div class="content">{{ $home.Content | replaceRE `(?s)^.*?(<h2 )` "${1}" | safeHTML }}</div>
+  <div class="content">{{ partial "body.html" $home }}</div>
 </main>
 </body>
 </html>

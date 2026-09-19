@@ -100,3 +100,12 @@ a:focus-visible{outline:2px solid var(--accent-primary);outline-offset:2px}
 .theme-toggle:hover{border-color:var(--accent-primary);color:var(--accent-primary)}
 .theme-toggle:focus-visible{outline:2px solid var(--accent-primary);outline-offset:2px}
 :root[data-theme="nfo"] .hero h1::after{color:var(--text-muted)}
+
+/* skill chips */
+.skill{margin:0 0 1rem}
+.skill > strong{display:block;margin-bottom:.35rem}
+.chips{display:flex;flex-wrap:wrap;gap:.35rem;margin:0;padding:0;list-style:none}
+.content .chips li{padding:.15rem .55rem;margin:0;font-size:.78rem;line-height:1.4;color:var(--text-body);
+  border:1px solid var(--border-strong);border-radius:2px;background:var(--surface-raised)}
+.content .chips li::before{content:none}
+.hero .tagline{margin-bottom:1rem}
