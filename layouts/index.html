@@ -25,7 +25,7 @@
 </div>
 <main class="wrap" id="resume">
   {{ partial "hero.html" . }}
-  <div class="content">{{ .Content }}</div>
+  <div class="content">{{/* hero renders name/contact; drop body content before the first section */}}{{ .Content | replaceRE `(?s)^.*?(<h2 )` "${1}" | safeHTML }}</div>
 </main>
 <footer class="wrap foot">
   <pre class="nfo" aria-hidden="true">!ignore → return "404: Resume not found"</pre>

@@ -22,7 +22,7 @@ a[href^="mailto:"],.contact a{font-weight:700}
 main{display:block}
 
 .hero{display:flex;gap:.9rem;align-items:flex-start;padding-bottom:.6rem;border-bottom:2px solid var(--ink);margin-bottom:.2rem}
-.mark-color{display:none}
+.mark-color,.mark-white{display:none}
 .mark-black{display:block;width:.5in;height:.5in;flex:none}
 .hero h1{font:700 20pt/1.1 var(--font-body);margin:0 0 .15rem;letter-spacing:0}
 .hero h1::before{content:"> "}
