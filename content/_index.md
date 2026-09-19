@@ -19,25 +19,21 @@ West Bend, WI · [resume@error404.net](mailto:resume@error404.net) · [LinkedIn]
 
 - IT Solutions Architect with 20+ years spanning MSP service delivery, infrastructure operations, small-business leadership, and U.S. Army service.
 - Designs and delivers Zero Trust, hybrid identity, endpoint defense, network security, backup, and Microsoft 365 improvements for small and midsized organizations.
-- Blue Team practitioner experienced in security monitoring, alert triage, investigation, endpoint containment, remediation, recovery coordination, and post-incident response.
-- Modernizes legacy environments into synchronized Entra ID / Azure AD hybrid identity using Conditional Access and identity-protection strategies.
-- Builds repeatable incident-response playbooks, operational runbooks, measurable SOPs, and AI-assisted workflows that improve consistency and audit readiness.
+- Blue Team practitioner experienced in security monitoring, alert triage, investigation, endpoint containment, remediation, and post-incident response.
 
 ## Technical Skills
 
-**Cybersecurity and Blue Team:** security monitoring · detection and investigation · incident classification · endpoint containment · eradication and remediation · recovery coordination · post-incident review · lessons learned · vulnerability management · incident-response playbooks
+**Cybersecurity and Blue Team:** security monitoring · detection and investigation · incident classification · endpoint containment · eradication and remediation · recovery coordination · post-incident review · vulnerability management · incident-response playbooks
 
-**Identity and Zero Trust:** Microsoft Entra ID · Azure AD · Azure AD Connect · Conditional Access · identity protection · hybrid identity modernization · Microsoft 365 · policy-based access · Active Directory
+**Identity and Zero Trust:** Microsoft Entra ID · Azure AD Connect · Conditional Access · identity protection · hybrid identity · Microsoft 365 · Active Directory
 
-**Endpoint and network defense:** Datto EDR · Microsoft Intune · endpoint hardening · patch automation · secure imaging · automated remediation · SD-WAN · VPN · VLAN segmentation · DNS filtering · firewall hardening · Cloudflare · traffic forwarding
+**Endpoint and network defense:** Datto EDR · Microsoft Intune · endpoint hardening · patch automation · secure imaging · SD-WAN · VPN · VLAN segmentation · DNS filtering · firewall hardening · traffic forwarding
 
-**Infrastructure and resilience:** Windows Server · VMware ESXi · Hyper-V · Proxmox VE · Linux · hybrid cloud infrastructure · Docker · backup and disaster recovery · monitoring and alerting
+**Infrastructure and MSP delivery:** Windows Server · VMware ESXi · Hyper-V · Proxmox VE · Linux · Docker · backup and disaster recovery · monitoring and alerting · Autotask PSA · IT Glue · Datto RMM · ticket triage and escalation · SLA management · vendor escalation · technician mentoring
 
-**MSP service delivery:** Autotask PSA · IT Glue · Datto RMM · ticket triage and escalation · SLA management · vendor escalation · client communication · technician mentoring · lifecycle management
+**AI engineering:** local model inference · edge AI deployment · Ollama · multi-provider model APIs · AI agents · Model Context Protocol (MCP) server development · workflow automation · prompt and context design
 
-**AI engineering and automation:** local model inference · edge AI deployment · Ollama · multi-provider model APIs · API integration · AI agents · agent tool use · Model Context Protocol (MCP) server development · workflow automation · prompt and context design
-
-**Automation, web, and delivery:** PowerShell · Bash · REST APIs · JSON/YAML · Git · GitHub Actions · CI/CD workflows · HTML · CSS · JavaScript · Cloudflare · runbook automation · SOPs · audit readiness · training enablement
+**Automation and web:** PowerShell · Bash · REST APIs · JSON/YAML · Git · GitHub Actions · CI/CD workflows · HTML · CSS · JavaScript · Cloudflare
 
 ## Professional Experience
 
@@ -46,71 +42,35 @@ West Bend, WI · [resume@error404.net](mailto:resume@error404.net) · [LinkedIn]
 **Collett Systems LLC** · West Bend, WI  
 **Jul 2021 – Present**
 
-- Lead infrastructure and cybersecurity delivery across Microsoft 365, Windows Server, hybrid identity, endpoint defense, networking, backup, and hybrid environments supporting several hundred users across multiple clients and sites.
-- Modernize legacy Active Directory into synchronized Entra ID / Azure AD hybrid identity and implement Zero Trust architecture with Microsoft Entra ID, Conditional Access, and identity-protection strategies.
+- Lead infrastructure and cybersecurity delivery across Microsoft 365, Windows Server, hybrid identity, endpoint defense, networking, and backup for several hundred users across multiple clients and sites.
+- Modernize legacy Active Directory into synchronized Entra ID / Azure AD hybrid identity and implement Zero Trust architecture with Conditional Access and identity-protection strategies.
 - Lead Datto EDR deployments and develop automated incident-response and remediation playbooks to improve threat containment and response consistency.
-- Triage security alerts, investigate suspicious activity, contain affected endpoints, coordinate remediation, document recovery actions, and capture lessons learned.
-- Administer Microsoft Intune endpoint-management processes, including hardening, patch automation, secure imaging, and remediation.
-- Design and implement SD-WAN, VPN, VLAN segmentation, DNS filtering, firewall, wired, wireless, and multi-site network improvements.
-- Implement Microsoft Global Secure Access capabilities, including Entra Private Access and traffic forwarding for policy-based remote access and inspection.
-- Build operational runbooks, knowledge bases, technical documentation, and measurable SOPs for onboarding, training, audit readiness, and consistent service delivery.
-- Administer Autotask PSA ticket workflows and IT Glue documentation standards, improving escalation context and knowledge reuse.
-- Apply PowerShell, Bash, REST API integration, and structured JSON/YAML configuration to automate repetitive operational work and make changes repeatable.
-- Deploy AI at the edge using locally hosted models; integrate multiple model providers through APIs; build agent workflows and MCP servers that connect AI systems to operational tools and data.
-- Contribute to monitoring, vulnerability management, patching, backup, disaster recovery, root-cause analysis, and infrastructure lifecycle planning.
-- Coordinate clients, technicians, vendors, and service-management processes from issue identification through implementation.
+- Triage security alerts, investigate suspicious activity, contain affected endpoints, coordinate remediation, and document recovery actions and lessons learned.
+- Administer Microsoft Intune endpoint management, including hardening, patch automation, secure imaging, and remediation.
+- Design and implement SD-WAN, VPN, VLAN segmentation, DNS filtering, firewall, and wired and wireless multi-site network improvements.
+- Deploy Microsoft Global Secure Access (Entra Private Access and traffic forwarding) for policy-based remote access and inspection, alongside Tailscale and ZeroTier overlays.
+- Build operational runbooks, knowledge bases, and measurable SOPs for onboarding, training, and audit readiness; administer Autotask PSA workflows and IT Glue standards to improve escalation context and knowledge reuse.
+- Automate repetitive operations with PowerShell, Bash, REST APIs, and JSON/YAML configuration.
+- Deploy edge AI with locally hosted models, integrate multiple model providers through APIs, and build agent workflows and MCP servers that connect AI systems to operational tools and data.
+- Develop and maintain content-driven websites with HTML, CSS, JavaScript, Git, GitHub Actions, and Cloudflare for automated, edge-hosted delivery.
 
 ### Manager and Lead Technician
 
 **Dan Frank Upholstery Inc.** · Oconomowoc, WI  
 **2000 – Jul 2021, excluding active-duty service**
 
-- Directed daily operations, scheduling, customer work, vendor coordination, inventory, quality control, and work-order execution.
-- Progressed from apprentice to upholsterer, lead technician, and manager while maintaining delivery standards and customer relationships.
+- Directed daily operations, scheduling, customer work, vendor coordination, inventory, and quality control.
+- Progressed from apprentice to upholsterer, lead technician, and manager; trained staff and kept work moving from intake through completion.
 - Digitized work-order tracking and safeguarded customer specifications through disciplined process and information management.
-- Coordinated competing priorities, communicated trade-offs, trained staff, and kept work moving from intake through completion.
-- Built transferable leadership, vendor-management, process-control, and client-service experience applicable to technical operations and security program management.
 
 ### Infantryman and Assistant Company Armorer
 
 **United States Army** · Fort Carson, CO  
 **Oct 2005 – Jul 2009**
 
-- Maintained 100 percent accountability for approximately $2 million in armory assets during redeployment and routine operations.
-- Maintained inventory versions and accountability records for arms-room assets, supporting compliance, auditability, and readiness.
+- Maintained 100 percent accountability for approximately $2 million in armory assets during redeployment and routine operations, keeping inventory and accountability records audit-ready.
 - Supported mission planning, vehicle mobilization, and missions including Operation Murfreesboro.
 - Completed 40 hours of Combat Lifesaver training and provided first-response support capability.
-- Coordinated people, equipment, safety, readiness, and mission requirements under pressure.
-
-## Selected Cybersecurity and Infrastructure Projects
-
-### Hybrid Identity and Zero Trust Modernization
-
-Modernized legacy Active Directory into synchronized Entra ID / Azure AD hybrid identity and implemented Conditional Access-based Zero Trust controls.
-
-### Blue Team Endpoint Defense and Response
-
-Led Datto EDR deployment, endpoint hardening, patch automation, secure imaging, automated remediation, and incident-response playbook development.
-
-### Edge AI and Agent Tooling
-
-Deploy locally hosted models at the edge, integrate multiple model providers through APIs, and build agent workflows and Model Context Protocol (MCP) servers for tool-connected AI operations.
-
-### Web Development and Edge Delivery
-
-Develop and maintain content-driven websites and technical web experiences using HTML, CSS, JavaScript, Git, GitHub Actions, and Cloudflare for source control, automated delivery, and edge-hosted service delivery.
-
-### Overlay Networking
-
-Implemented Entra Private Access and traffic forwarding to support policy-based remote access and inspection. Additionally deployed other vendors such as Tailscale, Zerotier.
-
-### Documentation and Response Enablement
-
-Standardized technical documentation, knowledge bases, operational runbooks, measurable SOPs, onboarding, and training to improve service consistency and incident-response readiness.
-
-### Multi-site Network Defense Modernization
-
-Designed wired, wireless, SD-WAN, VPN, segmentation, DNS, firewall, and redundancy improvements for distributed client environments.
 
 ## Education
 
